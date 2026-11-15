@@ -1,0 +1,57 @@
+{
+  "name": "@signops/react-native",
+  "version": "0.4.0",
+  "description": "SignOps in a React Native app: Approve (push approval of sign-ins, keys in the Android Keystore and iOS Secure Enclave), passkeys and push open reporting, with your publishable key.",
+  "license": "MIT",
+  "homepage": "https://signops.dev/docs/",
+  "author": "SignOps <hello@signops.dev>",
+  "keywords": [
+    "react-native",
+    "passkeys",
+    "push authentication",
+    "approve",
+    "push notifications",
+    "signops"
+  ],
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "react-native": "./src/index.tsx",
+  "source": "./src/index.tsx",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "SignOpsReactNative.podspec",
+    "app.plugin.js",
+    "plugin",
+    "react-native.config.js",
+    "README.md",
+    "LICENSE",
+    "!android/build",
+    "!**/*.iml"
+  ],
+  "scripts": {
+    "sync": "node ../sync-native.mjs",
+    "build": "npm run sync && rm -rf lib && tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test scripts/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.73",
+    "@expo/config-plugins": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "react": "18.3.1",
+    "react-native": "0.76.5",
+    "typescript": "^5.7.3"
+  },
+  "peerDependenciesMeta": {
+    "@expo/config-plugins": {
+      "optional": true
+    }
+  }
+}
