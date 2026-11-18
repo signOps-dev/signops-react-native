@@ -1,6 +1,6 @@
 {
   "name": "@signops/react-native",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "SignOps in a React Native app: Approve (push approval of sign-ins, keys in the Android Keystore and iOS Secure Enclave), passkeys and push open reporting, with your publishable key.",
   "license": "MIT",
   "homepage": "https://signops.dev/docs/",

@@ -1,9 +1,9 @@
 # SignOps for React Native
 
-Approve (a push to the user's trusted phone, answered with a key that never leaves it), passkeys on your own domain, and push open reporting, in a React Native app. The native work is the SignOps Android and iOS SDKs, compiled into this module: keys in the Android Keystore (StrongBox when the phone has it) and the iOS Secure Enclave, the fingerprint, face or passcode check before every approval.
+[SignOps](https://signops.dev) in a React Native app: Approve (a push to the user's trusted phone, answered with a key that never leaves it), passkeys on your own domain, and push open reporting. The native work is the SignOps Android and iOS SDKs, compiled into this module: keys in the Android Keystore (StrongBox when the phone has it) and the iOS Secure Enclave, the fingerprint, face or passcode check before every approval.
 
 ```sh
-npm install @signops/react-native        # not on npm yet
+npm install @signops/react-native
 cd ios && pod install
 ```
 
